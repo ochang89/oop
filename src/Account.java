@@ -13,15 +13,19 @@ public class Account {
         this.balance = balance;
     }
     public String getId(){
+
         return this.id;
     }
     public String getName(){
+
         return this.name;
     }
     public double getBalance(){
+
         return this.balance;
     }
     public void credit(double amount){
+
         this.balance += amount;
     }
     public boolean debit(double amount){
@@ -46,8 +50,6 @@ public class Account {
         }
     }
     public String accountDetails(){
-        String details = String.format("%s, the current balance in your account %s is $%f", this.name, this.id, this.balance);
-        return details;
+        return String.format("%s, the current balance in your account %s is $%f", this.name, this.id, this.balance);
     }
-
 }
