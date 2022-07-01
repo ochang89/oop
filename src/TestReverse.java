@@ -12,7 +12,6 @@ public class TestReverse
     public static boolean isExactReverse(String x, String y)
     {
         String yStr = "";
-
         // decrement through reversed argument y
         for(int i = y.length()-1; i >= 0; i--){
             // iterate through string y
